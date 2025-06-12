@@ -34,10 +34,10 @@ const Navbar = () => {
     <header
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300",
-        scrolled ? "bg-black/80 backdrop-blur-md shadow-md" : "bg-transparent",
+        scrolled ? "bg-black/80 backdrop-blur-md shadow-md" : "bg-transparent backdrop-blur-sm",
       )}
     >
-      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+      <div className="w-[90vw] container mx-auto px-4 py-3 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
           <div className="relative h-10 w-10">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>

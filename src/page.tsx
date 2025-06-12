@@ -4,7 +4,7 @@ import { Code, Database, Bot, CheckCircle, Clock, Users, Zap } from "lucide-reac
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen justify-center">
       {/* Hero Section */}
       <section className="pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-black via-blue-950/30 to-black z-0"></div>
@@ -16,7 +16,7 @@ export default function Home() {
           <div className="absolute top-40 right-1/4 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl"></div>
 
           {/* Grid pattern */}
-          <div className="absolute inset-0 bg-[url('/placeholder.svg?height=800&width=800')] bg-center opacity-10"></div>
+          <div className="absolute inset-0 bg-[url('../public/img/fondo_programacion1Editado.jpg?height=800&width=800')] bg-left-top "></div>
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
@@ -30,7 +30,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <button
-                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full px-8"
+                className="h-[5vh] bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full px-8"
               >
                 <Link to="/contact">Solicitar Presupuesto</Link>
               </button>
