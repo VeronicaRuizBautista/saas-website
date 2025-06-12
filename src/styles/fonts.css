@@ -1,0 +1,20 @@
+/* Importar fuentes personalizadas */
+
+@font-face {
+  font-family: 'CustomFont';
+  src: 
+       url('/fonts/Zaptron-Regular.otf') ;
+  font-weight: 600;
+  font-display: swap;
+}
+
+/* Definir variables CSS para las fuentes */
+:root {
+  --font-custom: 'CustomFont', system-ui, sans-serif;
+}
+
+/* Clases personalizadas para Tailwind 4 */
+.font-header-title {
+  font-family: var(--font-custom);
+
+} 

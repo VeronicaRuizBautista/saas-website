@@ -1,0 +1,52 @@
+:root {
+  /* Colores principales */
+  --color-black: #000000;
+  --color-white: #ffffff;
+  
+  /* Colores de marca */
+  --color-violet-blue: #5e3ae2;
+  --color-midnight-blue: #0c0c46;
+  --color-blue: #2caaff;
+  --color-dark-blue: #000087;
+  --color-pink: #e1309b;
+  --color-purple: #5a1796;
+  
+  /* Variaciones de opacidad */
+  --color-white-10: rgba(255, 255, 255, 0.1);
+  --color-white-30: rgba(255, 255, 255, 0.3);
+  --color-white-50: rgba(255, 255, 255, 0.5);
+  --color-white-70: rgba(255, 255, 255, 0.7);
+  --color-pink-70: rgba(225, 48, 155, 0.7);
+  --color-violet-blue-50: rgba(94, 58, 226, 0.5);
+  --color-dark-blue-0: rgba(0, 0, 135, 0);
+  --color-dark-blue-30: rgba(0, 0, 135, 0.3);
+  --color-dark-blue-60: rgba(0, 0, 135, 0.6);
+  --color-dark-blue-80: rgba(0, 0, 135, 0.8);
+  --color-dark-blue-100: rgba(0, 0, 135, 1);
+  
+  /* Efectos de cristal */
+  --glass-blue: rgba(44, 171, 255, 0.226);
+  --glass-shadow: 0 4px 22px 0 rgba(0, 0, 0, 0.37);
+  --glass-pink: rgba(225, 48, 154, 0.226);
+  --glass-blur: 2px;
+  
+  /* Gradientes */
+  --glass-gradient-primary: linear-gradient(135deg, var(--glass-blue), var(--glass-pink));
+  --glass-gradient-2: linear-gradient(190deg, var(--glass-blue), var(--glass-pink));
+  
+  /* Sombras */
+  --shadow-text-white: 0 0 7px var(--color-white-70), 0 0 20px var(--color-white-50);
+  --shadow-text-hunters: 0 0 3px var(--color-pink-70), 0 0 20px var(--color-violet-blue-50);
+  
+  /* Degradados de fondo */
+  --gradient-overlay: linear-gradient(
+    to bottom,
+    color-mix(in srgb, var(--color-black) 0%, transparent) 0%,
+    color-mix(in srgb, var(--color-black) 20%, transparent) 30%,
+    color-mix(in srgb, var(--color-midnight-blue) 60%, transparent) 60%,
+    color-mix(in srgb, var(--color-midnight-blue) 90%, transparent) 80%,
+    color-mix(in srgb, var(--color-midnight-blue) 100%, transparent) 100%
+  );
+
+  /* Navbar */
+} 

@@ -1,4 +1,5 @@
-import Link from "next/link"
+import { useState, useRef, useEffect } from 'react';
+import { Link } from "react-router-dom"
 import { Linkedin, Twitter, Instagram, Facebook, Mail, Phone } from "lucide-react"
 
 const Footer = () => {
@@ -41,27 +42,27 @@ const Footer = () => {
             <h3 className="text-white font-bold mb-4">Enlaces Rápidos</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-gray-400 hover:text-white transition-colors">
+                <Link to="/" className="text-gray-400 hover:text-white transition-colors">
                   Inicio
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-white transition-colors">
+                <Link to="/about" className="text-gray-400 hover:text-white transition-colors">
                   Sobre Nosotros
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-400 hover:text-white transition-colors">
+                <Link to="/services" className="text-gray-400 hover:text-white transition-colors">
                   Servicios
                 </Link>
               </li>
               <li>
-                <Link href="/portfolio" className="text-gray-400 hover:text-white transition-colors">
+                <Link to="/portfolio" className="text-gray-400 hover:text-white transition-colors">
                   Portafolio
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">
+                <Link to="/contact" className="text-gray-400 hover:text-white transition-colors">
                   Contáctanos
                 </Link>
               </li>
@@ -72,27 +73,27 @@ const Footer = () => {
             <h3 className="text-white font-bold mb-4">Servicios</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/services" className="text-gray-400 hover:text-white transition-colors">
+                <Link to="/services" className="text-gray-400 hover:text-white transition-colors">
                   Páginas Web
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-400 hover:text-white transition-colors">
+                <Link to="/services" className="text-gray-400 hover:text-white transition-colors">
                   E-commerce
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-400 hover:text-white transition-colors">
+                <Link to="/services" className="text-gray-400 hover:text-white transition-colors">
                   Aplicaciones
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-400 hover:text-white transition-colors">
+                <Link to="/services" className="text-gray-400 hover:text-white transition-colors">
                   Bases de Datos
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-400 hover:text-white transition-colors">
+                <Link to="/services" className="text-gray-400 hover:text-white transition-colors">
                   Chatbots e IA
                 </Link>
               </li>

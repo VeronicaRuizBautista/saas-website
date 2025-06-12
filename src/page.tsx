@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
+import { useState, useRef, useEffect } from 'react';
+import { Link } from "react-router-dom"
 import { Code, Database, Bot, CheckCircle, Clock, Users, Zap } from "lucide-react"
 
 export default function Home() {
@@ -29,19 +29,16 @@ export default function Home() {
               para impulsar tu negocio.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button
-                size="lg"
+              <button
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full px-8"
               >
-                <Link href="/contact">Solicitar Presupuesto</Link>
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
+                <Link to="/contact">Solicitar Presupuesto</Link>
+              </button>
+              <button
                 className="border-gray-600 text-white hover:bg-gray-800 rounded-full px-8"
               >
-                <Link href="/services">Explorar Servicios</Link>
-              </Button>
+                <Link to="/services">Explorar Servicios</Link>
+              </button>
             </div>
           </div>
         </div>
@@ -263,12 +260,11 @@ export default function Home() {
             <p className="text-xl text-gray-300 mb-8">
               Contáctanos hoy mismo y descubre cómo podemos ayudarte a alcanzar tus objetivos digitales.
             </p>
-            <Button
-              size="lg"
+            <button
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full px-8"
             >
-              <Link href="/contact">Contáctanos</Link>
-            </Button>
+              <Link to="/contact">Contáctanos</Link>
+            </button>
           </div>
         </div>
       </section>

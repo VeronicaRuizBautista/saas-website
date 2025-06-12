@@ -1,7 +1,7 @@
+import { useState, useRef, useEffect } from 'react';
+import { Link } from "react-router-dom"
 import { Button } from "@/components/ui/button"
-import Link from "next/link"
 import { Users, Globe, CheckCircle } from "lucide-react"
-import Image from "next/image"
 
 export default function AboutPage() {
   return (
@@ -58,7 +58,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-xl blur-xl"></div>
               <div className="relative bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800">
-                <Image
+                <img
                   src="/placeholder.svg?height=600&width=800"
                   alt="Equipo de SaaS Solutions"
                   width={800}
@@ -160,7 +160,7 @@ export default function AboutPage() {
                 className="bg-gray-900/30 rounded-xl overflow-hidden border border-gray-800 hover:border-blue-500/50 transition-colors group"
               >
                 <div className="relative h-64 overflow-hidden">
-                  <Image
+                  <img
                     src={member.image || "/placeholder.svg"}
                     alt={member.name}
                     width={400}
@@ -335,7 +335,7 @@ export default function AboutPage() {
               size="lg"
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full px-8"
             >
-              <Link href="/contact">Contáctanos</Link>
+              <Link to="/contact">Contáctanos</Link>
             </Button>
           </div>
         </div>
@@ -343,4 +343,3 @@ export default function AboutPage() {
     </div>
   )
 }
-

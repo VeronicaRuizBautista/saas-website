@@ -1,7 +1,6 @@
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
+import { useState, useRef, useEffect } from 'react';
+import { Link } from "react-router-dom"
 import { Server, Shield, BarChart } from "lucide-react"
-import Image from "next/image"
 
 export default function ServicesPage() {
   return (
@@ -61,14 +60,14 @@ export default function ServicesPage() {
                   <span className="text-gray-300">Aplicaciones web progresivas (PWA)</span>
                 </li>
               </ul>
-              <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full px-6">
-                <Link href="/contact">Solicitar Información</Link>
-              </Button>
+              <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full px-6">
+                <Link to="/contact">Solicitar Información</Link>
+              </button>
             </div>
             <div className="order-1 md:order-2 relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-xl blur-xl"></div>
               <div className="relative bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800">
-                <Image
+                <img
                   src="/placeholder.svg?height=600&width=800"
                   alt="Desarrollo Web"
                   width={800}
@@ -83,7 +82,7 @@ export default function ServicesPage() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-xl blur-xl"></div>
               <div className="relative bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800">
-                <Image
+                <img
                   src="/placeholder.svg?height=600&width=800"
                   alt="E-commerce"
                   width={800}
@@ -118,9 +117,9 @@ export default function ServicesPage() {
                   <span className="text-gray-300">Optimización para conversión</span>
                 </li>
               </ul>
-              <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full px-6">
-                <Link href="/contact">Solicitar Información</Link>
-              </Button>
+              <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full px-6">
+                <Link to="/contact">Solicitar Información</Link>
+              </button>
             </div>
           </div>
 
@@ -151,14 +150,14 @@ export default function ServicesPage() {
                   <span className="text-gray-300">Integración con APIs y servicios externos</span>
                 </li>
               </ul>
-              <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full px-6">
-                <Link href="/contact">Solicitar Información</Link>
-              </Button>
+              <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full px-6">
+                <Link to="/contact">Solicitar Información</Link>
+              </button>
             </div>
             <div className="order-1 md:order-2 relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-xl blur-xl"></div>
               <div className="relative bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800">
-                <Image
+                <img
                   src="/placeholder.svg?height=600&width=800"
                   alt="Desarrollo de Aplicaciones"
                   width={800}
@@ -173,7 +172,7 @@ export default function ServicesPage() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-xl blur-xl"></div>
               <div className="relative bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800">
-                <Image
+                <img
                   src="/placeholder.svg?height=600&width=800"
                   alt="Bases de Datos"
                   width={800}
@@ -208,9 +207,9 @@ export default function ServicesPage() {
                   <span className="text-gray-300">Soluciones en la nube y on-premise</span>
                 </li>
               </ul>
-              <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full px-6">
-                <Link href="/contact">Solicitar Información</Link>
-              </Button>
+              <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full px-6">
+                <Link to="/contact">Solicitar Información</Link>
+              </button>
             </div>
           </div>
 
@@ -241,14 +240,14 @@ export default function ServicesPage() {
                   <span className="text-gray-300">Automatización de procesos</span>
                 </li>
               </ul>
-              <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full px-6">
-                <Link href="/contact">Solicitar Información</Link>
-              </Button>
+              <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full px-6">
+                <Link to="/contact">Solicitar Información</Link>
+              </button>
             </div>
             <div className="order-1 md:order-2 relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-xl blur-xl"></div>
               <div className="relative bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800">
-                <Image
+                <img
                   src="/placeholder.svg?height=600&width=800"
                   alt="Chatbots e IA"
                   width={800}
@@ -284,9 +283,9 @@ export default function ServicesPage() {
                 Soluciones de alojamiento web y servidores optimizados para garantizar el rendimiento y la
                 disponibilidad de tus aplicaciones.
               </p>
-              <Button variant="outline" className="w-full border-gray-700 text-white hover:bg-gray-800">
-                <Link href="/contact">Más Información</Link>
-              </Button>
+              <button  className="w-full border-gray-700 text-white hover:bg-gray-800">
+                <Link to="/contact">Más Información</Link>
+              </button>
             </div>
 
             <div className="bg-gray-900/30 rounded-xl p-6 border border-gray-800 hover:border-blue-500/50 transition-colors">
@@ -298,9 +297,9 @@ export default function ServicesPage() {
                 Protegemos tus activos digitales con soluciones de seguridad avanzadas que previenen y mitigan amenazas
                 cibernéticas.
               </p>
-              <Button variant="outline" className="w-full border-gray-700 text-white hover:bg-gray-800">
-                <Link href="/contact">Más Información</Link>
-              </Button>
+              <button  className="w-full border-gray-700 text-white hover:bg-gray-800">
+                <Link to="/contact">Más Información</Link>
+              </button>
             </div>
 
             <div className="bg-gray-900/30 rounded-xl p-6 border border-gray-800 hover:border-blue-500/50 transition-colors">
@@ -312,9 +311,9 @@ export default function ServicesPage() {
                 Transformamos tus datos en información valiosa para la toma de decisiones estratégicas y la optimización
                 de procesos.
               </p>
-              <Button variant="outline" className="w-full border-gray-700 text-white hover:bg-gray-800">
-                <Link href="/contact">Más Información</Link>
-              </Button>
+              <button className="w-full border-gray-700 text-white hover:bg-gray-800">
+                <Link to="/contact">Más Información</Link>
+              </button>
             </div>
           </div>
         </div>
@@ -485,12 +484,11 @@ export default function ServicesPage() {
             <p className="text-xl text-gray-300 mb-8">
               Contáctanos hoy mismo para discutir tu proyecto y recibir una consulta gratuita.
             </p>
-            <Button
-              size="lg"
+            <button
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full px-8"
             >
-              <Link href="/contact">Solicitar Presupuesto</Link>
-            </Button>
+              <Link to="/contact">Solicitar Presupuesto</Link>
+            </button>
           </div>
         </div>
       </section>

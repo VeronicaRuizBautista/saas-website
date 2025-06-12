@@ -1,8 +1,6 @@
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
 import { ExternalLink, Code, ShoppingCart, Smartphone, Database, Bot } from "lucide-react"
-import Image from "next/image"
-
+import { useState, useRef, useEffect } from 'react';
+import { Link } from "react-router-dom"
 export default function PortfolioPage() {
   const projects = [
     {
@@ -100,10 +98,10 @@ export default function PortfolioPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
-              <Link href={`/portfolio/${project.id}`} key={project.id}>
+              <Link to={`/portfolio/${project.id}`} key={project.id}>
                 <div className="bg-gray-900/30 rounded-xl overflow-hidden border border-gray-800 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10 group h-full flex flex-col">
                   <div className="relative h-64 overflow-hidden">
-                    <Image
+                    <img
                       src={project.image || "/placeholder.svg"}
                       alt={project.title}
                       width={800}
@@ -157,12 +155,11 @@ export default function PortfolioPage() {
             <p className="text-xl text-gray-300 mb-8">
               Contáctanos hoy mismo y convierte tu idea en realidad con nuestro equipo de expertos.
             </p>
-            <Button
-              size="lg"
+            <button
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full px-8"
             >
-              <Link href="/contact">Contáctanos</Link>
-            </Button>
+              <Link to="/contact">Contáctanos</Link>
+            </button>
           </div>
         </div>
       </section>
