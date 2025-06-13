@@ -4,9 +4,9 @@ import { Code, Database, Bot, CheckCircle, Clock, Users, Zap } from "lucide-reac
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen justify-center">
+    <div className="flex flex-col min-h-screen items-center justify-center w-full overflow-hidden ">
       {/* Hero Section */}
-      <section className="pt-32 pb-20 relative overflow-hidden">
+      <section className="pt-32 pb-20 relative overflow-hidden w-full h-[70vh]">
         <div className="absolute inset-0 bg-gradient-to-b from-black via-blue-950/30 to-black z-0"></div>
 
         {/* Animated background elements */}
@@ -16,12 +16,20 @@ export default function Home() {
           <div className="absolute top-40 right-1/4 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl"></div>
 
           {/* Grid pattern */}
-          <div className="absolute inset-0 bg-[url('../public/img/fondo_programacion1Editado.jpg?height=800&width=800')] bg-left-top "></div>
+          <div className="absolute inset-0"></div>
+          <div className="relative w-full h-full">
+            {/* Imagen de fondo */}
+            <div className="absolute inset-0 bg-[url('../public/img/fondo_programacion1Editado.jpg?height=800&width=800')] bg-left-top bg-cover"></div>
+
+            {/* Capa negra con opacidad */}
+            <div className="absolute inset-0 bg-black opacity-60"></div>
+          </div>
+
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
+            <h1 className="text-4xl p-4 md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
               Transformamos Ideas en Soluciones Digitales
             </h1>
             <p className="text-xl text-gray-300 mb-8">
@@ -43,10 +51,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* from-blue-90/30 via-blue-950 to-black bg-black */}
 
       {/* Technologies Section */}
-      <section className="py-20 bg-black">
-        <div className="container mx-auto px-4">
+      <section className="h-[80vh] w-full bg-gradient-to-b flex flex-col items-center  justify-center from-blue-90/30 via-blue-950 to-[#050a1c] bg-black">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
               Nuestros Conocimientos y Tecnologías
@@ -56,7 +64,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-[90vw]">
             <div className="bg-gray-900/50 rounded-xl p-6 border border-gray-800 hover:border-blue-500/50 transition-colors">
               <div className="bg-gradient-to-r from-blue-600 to-purple-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Code className="text-white" size={24} />
@@ -102,14 +110,17 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
       </section>
-
+{/* py-20 bg-gradient-to-b from-black to-blue-950/30 */}
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-gradient-to-b from-black to-blue-950/30">
-        <div className="container mx-auto px-4">
+      <section className=" py-20 bg-gradient-to-b from-black to-[#050a1c] bg-black relative overflow-hidden w-full">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-900/20 to-purple-900/20"></div>
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+        </div>
+        <div className="container mx-auto px-4 w-[90vw]">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+            <h2 className="text-3xl md:text-4xl p-4 font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
               ¿Por Qué Elegirnos?
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
@@ -246,7 +257,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-black relative overflow-hidden">
+      <section className="py-20 from-blue-950/30 to-black bg-black relative overflow-hidden w-full">
         <div className="absolute inset-0 z-0">
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-900/20 to-purple-900/20"></div>
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
