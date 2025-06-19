@@ -15,14 +15,14 @@ export default function Home() {
           <div className="absolute bottom-20 right-10 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
           <div className="absolute top-40 right-1/4 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl"></div>
 
-          {/* Grid pattern */}
+          { /* Grid pattern */}
           <div className="absolute inset-0"></div>
           <div className="relative w-full h-full">
             {/* Imagen de fondo */}
             <div className="absolute inset-0 bg-[url('../public/img/fondo_programacion1Editado.jpg?height=800&width=800')] bg-left-top bg-cover"></div>
 
-            {/* Capa negra con opacidad */}
-            <div className="absolute inset-0 bg-black opacity-60"></div>
+            {/* Capa negra con opacidad y degradado */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/60 to-[#050a1c]"></div>
           </div>
 
         </div>
@@ -174,7 +174,7 @@ export default function Home() {
           </div>
 
           {/* Timeline */}
-          <div className="mt-20 max-w-4xl mx-auto">
+          <div className="mt-40 max-w-4xl mx-auto ">
             <h3 className="text-2xl font-bold text-white mb-8 text-center">Nuestra Trayectoria</h3>
 
             <div className="relative">

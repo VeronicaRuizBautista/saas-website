@@ -2,6 +2,8 @@ import { useState } from 'react'
 import RootLayout from './layout';
 import Home from './page';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AboutPage from './pages/about/page';
+import ServicesPage from './pages/services/page';
 
 
 export default function App() {
@@ -18,7 +20,8 @@ export default function App() {
           index 
           element={<Home />} 
         />
-        {/* <Route path="/" element={<Home  />} /> */}
+        <Route path="/about" element={<AboutPage  />} />
+        <Route path="/services" element={<ServicesPage />} />
       </Route>
       </Routes>
     </Router>
