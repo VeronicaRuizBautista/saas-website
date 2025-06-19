@@ -32,7 +32,7 @@ export default function ServicesPage() {
 
       {/* Services Section */}
       <section className="py-20 bg-black">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 w-[90vw]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
             <div className="order-2 md:order-1">
               <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
@@ -72,7 +72,7 @@ export default function ServicesPage() {
                   alt="Desarrollo Web"
                   width={800}
                   height={600}
-                  className="w-full h-auto"
+                  className="w-100% max-h-[50vh] object-cover"
                 />
               </div>
             </div>
@@ -87,7 +87,7 @@ export default function ServicesPage() {
                   alt="E-commerce"
                   width={800}
                   height={600}
-                  className="w-full h-auto"
+                  className="w-100% max-h-[50vh] object-cover"
                 />
               </div>
             </div>
@@ -162,7 +162,7 @@ export default function ServicesPage() {
                   alt="Desarrollo de Aplicaciones"
                   width={800}
                   height={600}
-                  className="w-full h-auto"
+                  className="w-100% max-h-[50vh] object-cover"
                 />
               </div>
             </div>
@@ -177,7 +177,7 @@ export default function ServicesPage() {
                   alt="Bases de Datos"
                   width={800}
                   height={600}
-                  className="w-full h-auto"
+                  className="w-100% max-h-[50vh] object-cover"
                 />
               </div>
             </div>
@@ -252,7 +252,7 @@ export default function ServicesPage() {
                   alt="Chatbots e IA"
                   width={800}
                   height={600}
-                  className="w-full h-auto"
+                  className="w-100% max-h-[50vh] object-cover"
                 />
               </div>
             </div>
@@ -262,7 +262,7 @@ export default function ServicesPage() {
 
       {/* Additional Services */}
       <section className="py-20 bg-gradient-to-b from-black to-blue-950/30">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 w-[90vw]">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
               Servicios Adicionales
