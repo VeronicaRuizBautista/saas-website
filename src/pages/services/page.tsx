@@ -68,7 +68,7 @@ export default function ServicesPage() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-xl blur-xl"></div>
               <div className="relative bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800">
                 <img
-                  src="/placeholder.svg?height=600&width=800"
+                  src="../../../public/img/web_development.jpg?height=600&width=800"
                   alt="Desarrollo Web"
                   width={800}
                   height={600}
@@ -83,7 +83,7 @@ export default function ServicesPage() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-xl blur-xl"></div>
               <div className="relative bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800">
                 <img
-                  src="/placeholder.svg?height=600&width=800"
+                  src="../../../public/img/e-commerce.jpg?height=600&width=800"
                   alt="E-commerce"
                   width={800}
                   height={600}
@@ -158,7 +158,7 @@ export default function ServicesPage() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-xl blur-xl"></div>
               <div className="relative bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800">
                 <img
-                  src="/placeholder.svg?height=600&width=800"
+                  src="../../../public/img/apps.jpg?height=600&width=800"
                   alt="Desarrollo de Aplicaciones"
                   width={800}
                   height={600}
