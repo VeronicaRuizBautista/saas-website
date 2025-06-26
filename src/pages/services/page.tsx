@@ -6,20 +6,27 @@ export default function ServicesPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="pt-32 pb-20 relative overflow-hidden">
+      <section className="pt-32 pb-20 relative overflow-hidden h-[60vh]">
         <div className="absolute inset-0 bg-gradient-to-b from-black via-blue-950/30 to-black z-0"></div>
 
         {/* Animated background elements */}
         <div className="absolute inset-0 z-0">
           <div className="absolute top-20 left-10 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-10 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
+          
+          { /* Grid pattern */}
+          <div className="absolute inset-0"></div>
+          <div className="relative w-full h-full">
+            {/* Imagen de fondo */}
+            <div className="absolute inset-0 bg-[url('../public/img/fondo_Servicios.png?height=800&width=800')] bg-cover"></div>
 
-          {/* Grid pattern */}
-          <div className="absolute inset-0 bg-[url('/placeholder.svg?height=800&width=800')] bg-center opacity-10"></div>
+            {/* Capa negra con opacidad y degradado */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black-800/10 via-black-800/10 to-[#050a1cea]"></div>
+          </div>
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-3xl mx-auto text-center mt-[5vh]">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
               Nuestros Servicios
             </h1>
@@ -31,7 +38,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-black">
+      <section className="py-20 bg-[#050a1c]">
         <div className="container mx-auto px-4 w-[90vw]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
             <div className="order-2 md:order-1">
@@ -173,7 +180,7 @@ export default function ServicesPage() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-xl blur-xl"></div>
               <div className="relative bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800">
                 <img
-                  src="/placeholder.svg?height=600&width=800"
+                  src="../../../public/img/base_datos.jpg?height=600&width=800"
                   alt="Bases de Datos"
                   width={800}
                   height={600}

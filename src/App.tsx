@@ -4,6 +4,8 @@ import Home from './page';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AboutPage from './pages/about/page';
 import ServicesPage from './pages/services/page';
+import ContactPage from './pages/contact/page';
+import PortfolioPage from './pages/portfolio/page';
 
 
 export default function App() {
@@ -22,6 +24,9 @@ export default function App() {
         />
         <Route path="/about" element={<AboutPage  />} />
         <Route path="/services" element={<ServicesPage />} />
+        <Route path="*" element={<div>404 Not Found</div>} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
       </Route>
       </Routes>
     </Router>
