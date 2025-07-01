@@ -255,7 +255,7 @@ export default function ServicesPage() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-xl blur-xl"></div>
               <div className="relative bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800">
                 <img
-                  src="/placeholder.svg?height=600&width=800"
+                  src="../../../public/img/ia_chatbot.png?height=600&width=800"
                   alt="Chatbots e IA"
                   width={800}
                   height={600}
@@ -268,7 +268,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Additional Services */}
-      <section className="py-20 bg-gradient-to-b from-black to-blue-950/30">
+      <section className="py-20 bg-gradient-to-b from-[#050a1c] via-bg-[#050a1c] to-[#230a38c2] bg-black">
         <div className="container mx-auto px-4 w-[90vw]">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
@@ -325,9 +325,10 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-
+{/* purple-500 */}
+{/* 1e0d2ddc */}
       {/* Process Section */}
-      <section className="py-20 bg-black">
+      <section className="py-20 bg-gradient-to-b from-[#230a38c2] via-[#170328ee] to-[#050a1c] bg-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
@@ -477,10 +478,10 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-b from-blue-950/30 to-black relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-b from-[#050a1c] to-black relative overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-900/20 to-purple-900/20"></div>
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#050a1c] to-purple-900/20"></div>
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#09102aba] rounded-full blur-3xl"></div>
         </div>
 
         <div className="container mx-auto px-4 relative z-10">

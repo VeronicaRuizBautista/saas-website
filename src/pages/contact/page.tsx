@@ -51,20 +51,26 @@ export default function ContactPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="pt-32 pb-20 relative overflow-hidden">
+      <section className="pt-32 pb-20 relative overflow-hidden h-[55vh]">
         <div className="absolute inset-0 bg-gradient-to-b from-black via-blue-950/30 to-black z-0"></div>
 
         {/* Animated background elements */}
         <div className="absolute inset-0 z-0">
           <div className="absolute top-20 left-10 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-10 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
+          { /* Grid pattern */}
+          <div className="absolute inset-0"></div>
+          <div className="relative w-full h-full">
+            {/* Imagen de fondo */}
+            <div className="absolute inset-0 bg-[url('../public/img/fondo_contactanos.png?height=800&width=800')] bg-cover"></div>
 
-          {/* Grid pattern */}
-          <div className="absolute inset-0 bg-[url('/placeholder.svg?height=800&width=800')] bg-center opacity-10"></div>
+            {/* Capa negra con opacidad y degradado */}
+            <div className="absolute inset-0 bg-gradient-to-b from-[#00000000] via-[#00000004] to-[#050a1cc6]"></div>
+          </div>
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-3xl mx-auto text-center mt-[5vh]">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
               Contáctanos
             </h1>
@@ -77,9 +83,9 @@ export default function ContactPage() {
 
       {/* Contact Form Section */}
       <section className="py-20 bg-black">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div className="bg-gray-900/30 rounded-xl p-8 border border-gray-800">
+        <div className="container mx-auto px-4 w-[90vw]">
+          <div className="flex justify-between">
+            <div className="bg-gray-900/30 rounded-xl p-8 border border-gray-800 w-[45%]">
               <h2 className="text-2xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
                 Envíanos un mensaje
               </h2>
@@ -209,7 +215,7 @@ export default function ContactPage() {
               )}
             </div>
 
-            <div>
+            <div className="w-[45%]">
               <h2 className="text-2xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
                 Información de contacto
               </h2>
@@ -338,7 +344,7 @@ export default function ContactPage() {
 
       {/* Map Section */}
       <section className="py-20 bg-gradient-to-b from-black to-blue-950/30">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 w-[90vw]">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
               Encuéntranos
